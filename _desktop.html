@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>preview desktop</title>
+<style>
+  html, body { margin: 0; background: #8a8a8a; }
+  iframe { display: block; width: 1280px; height: 900px; border: 0; margin: 0 auto; background: #fff; }
+</style>
+</head>
+<body>
+<iframe id="d" src="/index.html"></iframe>
+<script>
+  var frame = document.getElementById('d');
+  frame.addEventListener('load', function () {
+    var doc = frame.contentDocument;
+    frame.style.height = Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight) + 'px';
+  });
+</script>
+</body>
+</html>

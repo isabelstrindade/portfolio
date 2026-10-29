@@ -1,0 +1,41 @@
+# ============================================================
+# .gitignore - Projeto Portfólio Web
+# ============================================================
+
+# Arquivos de Sistema Operacional
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Atalhos do Windows (.lnk apontam para caminhos locais da máquina)
+*.lnk
+
+# Cópias automáticas criadas pelo Windows
+* - Copia.*
+* - Copia (*).*
+
+# Pasta de mídias pessoais (WhatsApp)
+# Mantém suas fotos/vídeos seguros no seu computador sem enviá-los ao GitHub público
+midia/
+WhatsApp*
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Logs e arquivos temporários
+*.log
+*.tmp
