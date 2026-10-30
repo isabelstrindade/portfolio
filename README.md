@@ -41,6 +41,14 @@
 
 ---
 
+## 🌐 Link do Site Publicado
+
+O site já está configurado e publicado no **GitHub Pages**:
+
+🔗 **[https://isabelstrindade.github.io/portfolio/](https://isabelstrindade.github.io/portfolio/)**
+
+---
+
 ## ✏️ Guia de Personalização
 
 Antes de publicar o seu portfólio no GitHub, abra o arquivo `index.html` em qualquer editor de código (como VS Code, Notepad++ ou Bloco de Notas) e atualize os seguintes campos:
