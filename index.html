@@ -6,38 +6,32 @@
 
 <!--
   ============================================================
-  PORTFÓLIO PESSOAL — arquivo único (HTML + CSS + JS embutidos)
+  PORTFÓLIO PROFISSIONAL — Isabel Trindade
   ------------------------------------------------------------
-  ANTES DE PUBLICAR, troque os dados de exemplo:
-    1. "Seu Nome" ................. seu nome completo
-    2. "SN" ....................... suas iniciais (monograma)
-    3. seu.email@exemplo.com ...... seu e-mail
-    4. +55 (00) 00000-0000 ........ WhatsApp com DDD
-    5. @seu.usuario ............... seu Instagram
-    6. github.com/seu-usuario ..... seu GitHub
-    7. [Sua cidade — UF] .......... sua cidade
-    8. [Nome da Universidade] ..... sua instituição
-    9. Textos dos 6 projetos ...... troque por projetos reais
-  Checklist completo: SPEC.md, seção 9.
+  Estudante de Administração · Atitus Educação
+  Mormaço — Rio Grande do Sul
+  E-mail: isabel12trindade@gmail.com
+  GitHub: github.com/isabelstrindade
   ============================================================
 -->
 
-<title>Seu Nome — Estudante de Administração | Portfólio</title>
-<meta name="description" content="Portfólio de Seu Nome, estudante de Administração com foco em gestão de processos, empreendedorismo e projetos de extensão. Projetos, formação e contato.">
-<meta name="author" content="Seu Nome">
+<title>Isabel Trindade — Estudante de Administração | Portfólio Profissional</title>
+<meta name="description" content="Portfólio profissional de Isabel Trindade, estudante de Administração na Atitus (2º semestre). Gestão organizacional, processos, pessoas e empreendedorismo.">
+<meta name="author" content="Isabel Trindade">
 <meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#081A22" media="(prefers-color-scheme: dark)">
 <meta name="robots" content="index, follow">
 
-<!-- Open Graph / redes sociais (troque a URL depois de publicar) -->
+<!-- Open Graph / redes sociais -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Seu Nome — Estudante de Administração">
-<meta property="og:description" content="Gestão com pé na realidade: projetos de empreendedorismo, extensão e processos.">
-<meta property="og:url" content="https://seu-usuario.github.io/">
+<meta property="og:title" content="Isabel Trindade — Estudante de Administração">
+<meta property="og:description" content="Gestão, organização, comunicação e desenvolvimento contínuo. Transformando ideias em ações.">
+<meta property="og:url" content="https://isabelstrindade.github.io/portfolio/">
+<meta property="og:image" content="https://isabelstrindade.github.io/portfolio/assets/img/isabel-trindade.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123B4F'/%3E%3Ctext x='32' y='43' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='700' fill='%23F4F1EA' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123B4F'/%3E%3Ctext x='32' y='43' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='700' fill='%23F4F1EA' text-anchor='middle'%3EIT%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,17 +52,23 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Seu Nome",
+  "name": "Isabel Trindade",
   "jobTitle": "Estudante de Administração",
-  "description": "Estudante de Administração com foco em gestão de processos, empreendedorismo e projetos de extensão.",
-  "url": "https://seu-usuario.github.io/",
+  "description": "Estudante de Administração na Atitus com foco em gestão organizacional, administração financeira, marketing, empreendedorismo e processos.",
+  "url": "https://isabelstrindade.github.io/portfolio/",
+  "email": "mailto:isabel12trindade@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mormaço",
+    "addressRegion": "RS",
+    "addressCountry": "BR"
+  },
   "sameAs": [
-    "https://github.com/seu-usuario",
-    "https://instagram.com/seu.usuario"
+    "https://github.com/isabelstrindade"
   ],
   "alumniOf": {
     "@type": "CollegeOrUniversity",
-    "name": "[Nome da Universidade]"
+    "name": "Atitus Educação"
   }
 }
 </script>
@@ -501,6 +501,29 @@ strong { font-weight: 600; }
   pointer-events: none;
 }
 
+.profile-card__avatar {
+  position: relative;
+  width: 100%;
+  max-width: 230px;
+  height: 290px;
+  margin: 0 auto 1.35rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 16px 36px -12px rgba(11, 36, 48, 0.4);
+  border: 2px solid var(--line-strong);
+  background: var(--bg-sunk);
+}
+.profile-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.4s var(--ease);
+}
+.profile-card:hover .profile-card__img {
+  transform: scale(1.03);
+}
+
 .profile-card__top {
   position: relative;
   display: flex;
@@ -752,7 +775,7 @@ strong { font-weight: 600; }
 .progress span {
   display: block;
   height: 100%;
-  width: 75%;
+  width: 25%;
   border-radius: inherit;
   background: linear-gradient(90deg, var(--teal), var(--accent-bright));
 }
@@ -925,6 +948,8 @@ strong { font-weight: 600; }
 .tag--extensao { --tag-c: var(--teal); }
 .tag--academico { --tag-c: var(--blue); }
 .tag--gestao { --tag-c: var(--ink-soft); }
+.tag--profissional { --tag-c: var(--teal); }
+.tag--formacao { --tag-c: var(--blue); }
 
 .project h3 {
   font-size: 1.2rem;
@@ -1359,18 +1384,18 @@ strong { font-weight: 600; }
 
 <header class="site-header">
   <div class="container header__inner">
-    <a class="brand" href="#topo" aria-label="Seu Nome — ir para o início">
-      <span class="monogram" aria-hidden="true">SN</span>
+    <a class="brand" href="#topo" aria-label="Isabel Trindade — ir para o início">
+      <span class="monogram" aria-hidden="true">IT</span>
       <span class="brand__text">
-        Seu Nome
+        Isabel Trindade
         <span>Administração</span>
       </span>
     </a>
 
     <nav class="nav" id="nav" aria-label="Navegação principal">
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Trajetória</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -1399,27 +1424,27 @@ strong { font-weight: 600; }
   <section class="hero" id="topo" aria-labelledby="hero-title">
     <div class="container hero__grid">
       <div class="hero__content">
-        <p class="eyebrow">Portfólio · Administração &amp; empreendedorismo</p>
+        <p class="eyebrow">Portfólio · Gestão, Organização &amp; Comunicação</p>
 
         <h1 class="hero__title" id="hero-title">
-          <span class="hero__name">Seu Nome</span>
-          <span class="hero__line">Gestão com <em>pé na realidade</em>.</span>
+          <span class="hero__name">Isabel Trindade</span>
+          <span class="hero__line">Transformando ideias em <em>ações concretas</em>.</span>
         </h1>
 
         <p class="hero__lead">
-          Estudante de Administração no 6º semestre. Organizo ideias, monto planilhas,
-          mapeio processos e transformo trabalho de sala de aula em projeto que funciona
-          fora dela. Este site é o registro do que venho construindo.
+          Estudante de Administração no 2º semestre na Atitus, interessada em gestão,
+          organização de processos, comunicação e desenvolvimento profissional.
+          Acredito no aprendizado contínuo e na capacidade de transformar aprendizado em experiências práticas.
         </p>
 
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#projetos">
-            Ver projetos
+          <a class="btn btn--primary" href="#experiencias">
+            Conheça minha trajetória
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6"/>
             </svg>
           </a>
-          <a class="btn btn--ghost" href="#contato">Falar comigo</a>
+          <a class="btn btn--ghost" href="#contato">Entre em contato</a>
           <button class="text-btn" type="button" data-print>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2"/>
@@ -1433,137 +1458,136 @@ strong { font-weight: 600; }
 
       <aside class="hero__aside">
         <div class="profile-card">
+          <div class="profile-card__avatar">
+            <img src="assets/img/isabel-trindade.png" alt="Foto profissional de Isabel Trindade" class="profile-card__img">
+          </div>
+
           <div class="profile-card__top">
             <span class="status"><span class="status__dot" aria-hidden="true"></span>Disponível para oportunidades</span>
-            <span class="profile-card__mono" aria-hidden="true">SN</span>
+            <span class="profile-card__mono" aria-hidden="true">IT</span>
           </div>
 
           <dl class="facts">
             <div>
               <dt>Curso</dt>
-              <dd>Administração · 6º semestre</dd>
+              <dd>Administração · 2º semestre</dd>
             </div>
             <div>
-              <dt>Formação prevista</dt>
-              <dd>2027</dd>
+              <dt>Instituição</dt>
+              <dd>Atitus Educação</dd>
             </div>
             <div>
-              <dt>Foco</dt>
-              <dd>Processos, projetos e empreendedorismo</dd>
+              <dt>Interesses</dt>
+              <dd>Gestão, Processos, Pessoas &amp; Marketing</dd>
             </div>
             <div>
-              <dt>Base</dt>
-              <dd>[Sua cidade — UF]</dd>
+              <dt>Localização</dt>
+              <dd>Mormaço — Rio Grande do Sul</dd>
             </div>
           </dl>
 
-          <p class="profile-card__foot">Última atualização: [mês/ano]</p>
+          <p class="profile-card__foot">Última atualização: Novembro / 2026</p>
         </div>
       </aside>
     </div>
 
     <div class="strip">
       <div class="container">
-        <ul aria-label="Áreas de interesse">
-          <li>Gestão de processos</li>
+        <ul aria-label="Áreas de interesse e estudo">
+          <li>Gestão organizacional</li>
+          <li>Organização de processos</li>
+          <li>Gestão de pessoas</li>
+          <li>Administração financeira</li>
+          <li>Marketing &amp; comunicação</li>
           <li>Empreendedorismo</li>
-          <li>Análise de dados</li>
-          <li>Projetos de extensão</li>
-          <li>Melhoria contínua</li>
         </ul>
       </div>
     </div>
   </section>
+
   <section class="section" id="sobre" aria-labelledby="sobre-title">
     <div class="container">
       <header class="section-head">
-        <p class="section-kicker"><span aria-hidden="true">01</span> Sobre</p>
-        <h2 class="section-title" id="sobre-title">Gosto de entender o problema <em>antes</em> da planilha.</h2>
+        <p class="section-kicker"><span aria-hidden="true">01</span> Trajetória &amp; Valores</p>
+        <h2 class="section-title" id="sobre-title">Minha trajetória e meu <em>jeito de trabalhar</em>.</h2>
         <p class="section-lead">
-          Formação, repertório e o que estou buscando agora — em um parágrafo e três listas.
+          Aprendizado contínuo, empatia e compromisso em construir ambientes organizados e colaborativos.
         </p>
       </header>
 
       <div class="about-grid">
         <article class="card about-text">
           <p>
-            Escolhi Administração porque queria entender por que as organizações funcionam —
-            e, principalmente, por que tantas param de funcionar. No meio do caminho descobri
-            que meu lugar favorito é onde a teoria encontra a prática: montar um plano de
-            negócio, mapear o processo de uma ONG, organizar dados que ninguém tinha olhado
-            com atenção.
+            Sou estudante de Administração na Atitus, atualmente no segundo semestre. Tenho interesse
+            genuíno pela área administrativa, gestão de pessoas, organização de processos e empreendedorismo.
+            Busco ampliar meus conhecimentos diariamente e transformar o aprendizado em experiências práticas.
           </p>
           <p>
-            Trabalho bem em equipe, gosto de conversa difícil e prefiro resolver o problema
-            pequeno antes que ele vire retrabalho. Aprendi isso coordenando projeto de extensão,
-            cuidando de caixa de feira e apresentando resultado para quem não tinha tempo de
-            ler relatório.
+            No meu jeito de trabalhar, valorizo a comunicação clara, a empatia, o respeito e a colaboração.
+            Gosto de aprender, assumir responsabilidades com seriedade e contribuir ativamente para
+            ambientes organizados, acolhedores e produtivos.
           </p>
           <p>
-            Hoje busco minha primeira oportunidade efetiva ou um programa de trainee em gestão,
-            operações ou projetos. Não tenho dez anos de carreira para mostrar — tenho projetos
-            reais, vontade de aprender e disposição para começar de onde for preciso.
+            Acredito que o crescimento profissional se constrói com dedicação contínua, abertura para novos
+            desafios e o cuidado em fazer entregas de qualidade que façam a diferença para a equipe e o negócio.
           </p>
-          <p class="about-sign">Seu Nome <span>· Estudante de Administração</span></p>
+          <p class="about-sign">Isabel Trindade <span>· Estudante de Administração</span></p>
         </article>
 
         <aside class="card edu-card" aria-labelledby="formacao-title">
-          <p class="card-kicker">Formação</p>
+          <p class="card-kicker">Aprendizado · Formação Acadêmica</p>
           <div>
             <h3 id="formacao-title">Graduação em Administração</h3>
-            <p class="edu-card__school">[Nome da Universidade]</p>
+            <p class="edu-card__school">Atitus Educação</p>
           </div>
           <div class="edu-meta">
             <span class="pill">Em andamento</span>
-            <span>2023 – 2027 (previsão)</span>
+            <span>2º semestre (2026 – 2029)</span>
           </div>
           <p class="edu-card__school">
-            Ênfase em gestão de processos e empreendedorismo. Atividades: empresa júnior,
-            projetos de extensão e organização de eventos acadêmicos.
+            <strong>Interesses de estudo:</strong> gestão organizacional, administração financeira, marketing, empreendedorismo e comportamento organizacional.
           </p>
           <div class="progress-wrap">
             <div class="progress" aria-hidden="true"><span></span></div>
-            <p class="progress-label"><span>6º de 8 semestres</span><span>75%</span></p>
+            <p class="progress-label"><span>2º de 8 semestres</span><span>25% concluído</span></p>
           </div>
         </aside>
 
-        <section class="card skills" aria-label="Competências">
+        <section class="card skills" aria-label="Competências e habilidades">
           <div class="skill">
-            <h3>Gestão &amp; processos</h3>
+            <h3>Comunicação &amp; Relacionamento</h3>
             <ul>
-              <li>Mapeamento de processos (AS-IS / TO-BE)</li>
-              <li>BPMN básico e 5W2H</li>
-              <li>Indicadores e rotinas de acompanhamento</li>
-              <li>Gestão de projetos (fundamentos PMBOK)</li>
+              <li><strong>Comunicação:</strong> expressar ideias com clareza e manter um diálogo respeitoso.</li>
+              <li><strong>Empatia:</strong> compreender diferentes perspectivas e acolher necessidades das pessoas.</li>
+              <li><strong>Trabalho em equipe:</strong> colaborar, compartilhar responsabilidades e construir soluções conjuntas.</li>
             </ul>
           </div>
           <div class="skill">
-            <h3>Dados &amp; ferramentas</h3>
+            <h3>Organização &amp; Execução</h3>
             <ul>
-              <li>Excel avançado e Google Sheets</li>
-              <li>Power BI (nível básico)</li>
-              <li>Notion, Trello e Canva</li>
-              <li>Organização e limpeza de bases</li>
+              <li><strong>Organização:</strong> planejar atividades, acompanhar tarefas e cuidar dos detalhes.</li>
+              <li><strong>Responsabilidade:</strong> compromisso com prazos, combinados e qualidade das entregas.</li>
+              <li><strong>Adaptabilidade:</strong> abertura constante para aprender e lidar com novas situações.</li>
             </ul>
           </div>
           <div class="skill">
-            <h3>Comunicação</h3>
+            <h3>Visão &amp; Desenvolvimento</h3>
             <ul>
-              <li>Relatórios e apresentações executivas</li>
-              <li>Facilitação de reuniões e dinâmicas</li>
-              <li>Atendimento e relacionamento</li>
-              <li>Escrita clara e objetiva</li>
+              <li><strong>Empreendedorismo:</strong> interesse em iniciativas, oportunidades e desenvolvimento de negócios.</li>
+              <li><strong>Marketing:</strong> comunicação, divulgação e relacionamento com o público.</li>
+              <li><strong>Desenvolvimento contínuo:</strong> disposição para aprimorar conhecimentos técnicos e liderança.</li>
             </ul>
           </div>
         </section>
 
         <aside class="card goal-card" aria-labelledby="objetivo-title">
           <div>
-            <p class="card-kicker">O que estou buscando</p>
-            <h3 id="objetivo-title">Vaga efetiva ou trainee em gestão, operações ou projetos.</h3>
+            <p class="card-kicker">Meu objetivo</p>
+            <h3 id="objetivo-title">Aprender, evoluir e contribuir.</h3>
             <p>
-              Disponibilidade para [cidade, híbrido ou remoto]. Aceito começar por baixo,
-              aprender rápido e assumir responsabilidade cedo.
+              Busco oportunidades que me permitam desenvolver minhas competências, adquirir novos conhecimentos
+              e contribuir com dedicação, responsabilidade e vontade de aprender. Quero construir uma trajetória
+              profissional baseada em crescimento, colaboração e resultados.
             </p>
           </div>
           <a class="btn" href="#contato">
@@ -1576,197 +1600,163 @@ strong { font-weight: 600; }
       </div>
     </div>
   </section>
-  <section class="section" id="projetos" aria-labelledby="projetos-title">
+  <section class="section" id="experiencias" aria-labelledby="projetos-title">
     <div class="container">
       <header class="section-head">
-        <p class="section-kicker"><span aria-hidden="true">02</span> Projetos</p>
-        <h2 class="section-title" id="projetos-title">Projetos que saíram <em>do papel</em>.</h2>
+        <p class="section-kicker"><span aria-hidden="true">02</span> Prática e Aprendizado</p>
+        <h2 class="section-title" id="projetos-title">Projetos e <em>experiências</em>.</h2>
         <p class="section-lead">
-          Trabalhos de extensão, sala de aula e empreendedorismo. Filtre por frente para ver
-          o que cada um entregou de concreto.
+          Trabalhos acadêmicos, atividades práticas, iniciativas e vivências profissionais que representam minha evolução.
         </p>
       </header>
 
-      <div class="filters" role="group" aria-label="Filtrar projetos por categoria">
+      <div class="filters" role="group" aria-label="Filtrar por categoria">
         <button class="chip is-active" type="button" data-filter="todos" aria-pressed="true">
-          Todos <span>6</span>
+          Todos <span>5</span>
         </button>
-        <button class="chip" type="button" data-filter="empreendedorismo" aria-pressed="false">
-          Empreendedorismo <span>2</span>
+        <button class="chip" type="button" data-filter="profissional" aria-pressed="false">
+          Experiências Profissionais <span>3</span>
         </button>
-        <button class="chip" type="button" data-filter="extensao" aria-pressed="false">
-          Extensão <span>2</span>
+        <button class="chip" type="button" data-filter="formacao" aria-pressed="false">
+          Formação Complementar <span>2</span>
         </button>
-        <button class="chip" type="button" data-filter="academico" aria-pressed="false">
-          Acadêmico <span>1</span>
-        </button>
-        <button class="chip" type="button" data-filter="gestao" aria-pressed="false">
-          Gestão <span>1</span>
-        </button>
-        <p class="filters__status" data-filter-status aria-live="polite">6 projetos</p>
+        <p class="filters__status" data-filter-status aria-live="polite">5 itens</p>
       </div>
 
       <div class="project-grid">
-        <!-- Projeto 1 — troque título, descrição e entregas pelos dados reais -->
-        <article class="card project" data-category="empreendedorismo">
+        <!-- Experiência 1 -->
+        <article class="card project" data-category="profissional">
           <div class="project__top">
             <span class="project__num" aria-hidden="true">01</span>
-            <span class="tag tag--empreendedorismo">Empreendedorismo</span>
+            <span class="tag tag--profissional">Profissional</span>
           </div>
-          <h3>Feira de Negócios: do plano ao caixa</h3>
+          <h3>Auxiliar Administrativo — Empresa Familiar</h3>
           <p class="project__desc">
-            Plano de negócio completo para uma barraca de comida saudável no campus, com
-            pesquisa de preços, ficha técnica e controle de caixa em planilha. O negócio
-            operou por três dias.
+            Atuação atual em atividades de apoio administrativo, contribuindo diretamente com a organização
+            e o funcionamento harmônico das rotinas da empresa.
           </p>
           <ul class="project__deliverables">
-            <li>Plano de negócio e precificação</li>
-            <li>Planilha de custos e fluxo de caixa</li>
+            <li>Apoio administrativo operacional e controle de rotinas</li>
+            <li>Organização de documentos e suporte às atividades diárias</li>
           </ul>
-          <ul class="project__tags" aria-label="Temas do projeto">
-            <li>Plano de negócio</li>
-            <li>Precificação</li>
-            <li>Fluxo de caixa</li>
+          <ul class="project__tags" aria-label="Temas">
+            <li>Apoio Administrativo</li>
+            <li>Organização de Rotinas</li>
+            <li>Empresa Familiar</li>
           </ul>
           <footer class="project__meta">
-            <span>2025</span>
-            <span>Equipe de 4 pessoas</span>
+            <span>Atuação atual</span>
+            <span>Mormaço — RS</span>
           </footer>
         </article>
 
-        <!-- Projeto 2 -->
-        <article class="card project" data-category="extensao">
+        <!-- Experiência 2 -->
+        <article class="card project" data-category="profissional">
           <div class="project__top">
             <span class="project__num" aria-hidden="true">02</span>
-            <span class="tag tag--extensao">Extensão</span>
+            <span class="tag tag--profissional">Profissional</span>
           </div>
-          <h3>Mapeamento de processos de uma ONG parceira</h3>
+          <h3>Assistente Administrativo — Mercado</h3>
           <p class="project__desc">
-            Análise AS-IS de três processos — doação, triagem e entrega — e desenho do fluxo
-            TO-BE com cinco melhorias de baixo custo, apresentadas à diretoria da organização.
+            Experiência em atividades administrativas no setor de mercado, desenvolvendo organização,
+            responsabilidade e atenção aos processos e rotinas do negócio.
           </p>
           <ul class="project__deliverables">
-            <li>Fluxos AS-IS e TO-BE em BPMN</li>
-            <li>Plano de ação 5W2H</li>
+            <li>Acompanhamento de rotinas e procedimentos do negócio</li>
+            <li>Desenvolvimento de organização, disciplina e precisão</li>
           </ul>
-          <ul class="project__tags" aria-label="Temas do projeto">
-            <li>BPMN</li>
-            <li>5W2H</li>
-            <li>Melhoria contínua</li>
+          <ul class="project__tags" aria-label="Temas">
+            <li>Setor Comercial</li>
+            <li>Rotinas Administrativas</li>
+            <li>Responsabilidade</li>
           </ul>
           <footer class="project__meta">
-            <span>2025</span>
-            <span>Projeto de extensão</span>
+            <span>Experiência profissional</span>
+            <span>Setor Varejista</span>
           </footer>
         </article>
 
-        <!-- Projeto 3 -->
-        <article class="card project" data-category="extensao">
+        <!-- Experiência 3 -->
+        <article class="card project" data-category="profissional">
           <div class="project__top">
             <span class="project__num" aria-hidden="true">03</span>
-            <span class="tag tag--extensao">Extensão</span>
+            <span class="tag tag--profissional">Profissional</span>
           </div>
-          <h3>Mentoria de empreendedores da comunidade</h3>
+          <h3>Jovem Aprendiz do Campo</h3>
           <p class="project__desc">
-            Ciclo de quatro encontros sobre precificação, controle de caixa e divulgação, com
-            material de apoio acessível e acompanhamento individual de pequenos negócios.
+            Participação em experiência estruturada de aprendizagem e desenvolvimento profissional,
+            ampliando conhecimentos técnicos e vivências práticas no ambiente de trabalho.
           </p>
           <ul class="project__deliverables">
-            <li>Material didático e roteiro de aulas</li>
-            <li>12 negócios atendidos no ciclo</li>
+            <li>Vivência formativa com foco em desenvolvimento contínuo</li>
+            <li>Trabalho em equipe, autonomia e responsabilidade</li>
           </ul>
-          <ul class="project__tags" aria-label="Temas do projeto">
-            <li>Facilitação</li>
-            <li>Educação financeira</li>
-            <li>Extensão</li>
+          <ul class="project__tags" aria-label="Temas">
+            <li>Programa Jovem Aprendiz</li>
+            <li>Desenvolvimento Profissional</li>
+            <li>Trabalho em Equipe</li>
           </ul>
           <footer class="project__meta">
-            <span>2024</span>
-            <span>Equipe de 3 pessoas</span>
+            <span>Experiência formativa</span>
+            <span>Aprendizagem</span>
           </footer>
         </article>
 
-        <!-- Projeto 4 -->
-        <article class="card project" data-category="gestao">
+        <!-- Formação 1 -->
+        <article class="card project" data-category="formacao">
           <div class="project__top">
             <span class="project__num" aria-hidden="true">04</span>
-            <span class="tag tag--gestao">Gestão</span>
+            <span class="tag tag--formacao">Formação Complementar</span>
           </div>
-          <h3>Painel de indicadores para o centro acadêmico</h3>
+          <h3>Programa Super Nova</h3>
           <p class="project__desc">
-            Planilha de controle de associados, inadimplência e eventos, com painel mensal e
-            manual de uso. O fechamento do mês passou a levar 20 minutos em vez de dois dias.
+            Participação no programa como parte estratégica da trajetória de desenvolvimento pessoal,
+            capacitação em liderança e expansão do repertório profissional.
           </p>
           <ul class="project__deliverables">
-            <li>Dashboard mensal em planilha</li>
-            <li>Manual de uso e treinamento da diretoria</li>
+            <li>Imersão em desenvolvimento, competências e liderança</li>
+            <li>Ampliação de visão estratégica e crescimento</li>
           </ul>
-          <ul class="project__tags" aria-label="Temas do projeto">
-            <li>KPIs</li>
-            <li>Excel</li>
-            <li>Padronização</li>
+          <ul class="project__tags" aria-label="Temas">
+            <li>Super Nova</li>
+            <li>Liderança</li>
+            <li>Desenvolvimento Pessoal</li>
           </ul>
           <footer class="project__meta">
-            <span>2025</span>
-            <span>Gestão interna</span>
+            <span>Programa complementar</span>
+            <span>Capacitação</span>
           </footer>
         </article>
 
-        <!-- Projeto 5 -->
-        <article class="card project" data-category="academico">
+        <!-- Formação 2 -->
+        <article class="card project" data-category="formacao">
           <div class="project__top">
             <span class="project__num" aria-hidden="true">05</span>
-            <span class="tag tag--academico">Acadêmico</span>
+            <span class="tag tag--formacao">Formação Complementar</span>
           </div>
-          <h3>Estudo de viabilidade: cafeteria no campus</h3>
+          <h3>Estudo da Língua Inglesa</h3>
           <p class="project__desc">
-            Pesquisa de demanda com 180 respostas, análise de custos fixos e variáveis, ponto
-            de equilíbrio e estimativa de payback para um ponto comercial dentro da faculdade.
+            Um ano de dedicação ao aprendizado da língua inglesa, desenvolvendo vocabulário,
+            compreensão auditiva e leitura para comunicação no ambiente profissional.
           </p>
           <ul class="project__deliverables">
-            <li>Relatório técnico com metodologia</li>
-            <li>Modelo financeiro em planilha</li>
+            <li>1 ano de formação e prática no idioma</li>
+            <li>Desenvolvimento de vocabulário e compreensão</li>
           </ul>
-          <ul class="project__tags" aria-label="Temas do projeto">
-            <li>Viabilidade</li>
-            <li>Pesquisa de mercado</li>
-            <li>Payback</li>
-          </ul>
-          <footer class="project__meta">
-            <span>2024</span>
-            <span>Trabalho em dupla</span>
-          </footer>
-        </article>
-
-        <!-- Projeto 6 -->
-        <article class="card project" data-category="empreendedorismo">
-          <div class="project__top">
-            <span class="project__num" aria-hidden="true">06</span>
-            <span class="tag tag--empreendedorismo">Empreendedorismo</span>
-          </div>
-          <h3>Campanha de captação para projeto social</h3>
-          <p class="project__desc">
-            Plano de captação com calendário de conteúdo, parcerias locais e prestação de
-            contas pública. A meta de R$ 5 mil foi atingida em três semanas.
-          </p>
-          <ul class="project__deliverables">
-            <li>Plano de campanha e calendário editorial</li>
-            <li>Relatório de prestação de contas</li>
-          </ul>
-          <ul class="project__tags" aria-label="Temas do projeto">
-            <li>Captação</li>
+          <ul class="project__tags" aria-label="Temas">
+            <li>Inglês</li>
+            <li>Idiomas</li>
             <li>Comunicação</li>
-            <li>Prestação de contas</li>
           </ul>
           <footer class="project__meta">
-            <span>2025</span>
-            <span>Projeto voluntário</span>
+            <span>1 ano de estudo</span>
+            <span>Idioma</span>
           </footer>
         </article>
       </div>
 
       <p class="projects__note">
-        Cada projeto tem um estudo de caso completo — posso enviar por e-mail se for útil.
+        Essas experiências contribuíram para ampliar meus conhecimentos, minha autonomia e minha preparação para novos desafios.
       </p>
     </div>
   </section>
@@ -1777,11 +1767,9 @@ strong { font-weight: 600; }
           <p class="section-kicker"><span aria-hidden="true">03</span> Contato</p>
           <h2 id="contato-title">Vamos <em>conversar</em>?</h2>
           <p>
-            Estou em busca da primeira oportunidade em gestão. Se você tem uma vaga, um projeto
-            ou só quer trocar ideia sobre processos e empreendedorismo, me escreve — respondo
-            em até dois dias úteis.
+            Estou aberta a conexões, oportunidades profissionais e trocas de conhecimento. Quero continuar aprendendo e contribuir com dedicação, organização e vontade de crescer.
           </p>
-          <a class="mail-link" href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a>
+          <a class="mail-link" href="mailto:isabel12trindade@gmail.com">isabel12trindade@gmail.com</a>
           <p class="contact__note">
             Prefere o currículo em PDF?
             <button class="text-btn" type="button" data-print>Gerar pela impressão do navegador</button>
@@ -1790,7 +1778,7 @@ strong { font-weight: 600; }
 
         <ul class="channels">
           <li>
-            <a href="mailto:seu.email@exemplo.com">
+            <a href="mailto:isabel12trindade@gmail.com">
               <span class="channels__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="3" y="5" width="18" height="14" rx="2"/>
@@ -1799,7 +1787,7 @@ strong { font-weight: 600; }
               </span>
               <span class="channels__text">
                 <span class="channels__label">E-mail</span>
-                <span class="channels__value">seu.email@exemplo.com</span>
+                <span class="channels__value">isabel12trindade@gmail.com</span>
               </span>
               <svg class="channels__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M7 17 17 7M9 7h8v8"/>
@@ -1808,44 +1796,7 @@ strong { font-weight: 600; }
           </li>
 
           <li>
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
-              <span class="channels__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/>
-                  <path d="M8.8 8.2c.4-.9 1.5-.6 1.7.1l.4 1.3c.1.3 0 .6-.2.8l-.5.5c.4 1.2 1.4 2.2 2.6 2.6l.5-.5c.2-.2.5-.3.8-.2l1.3.4c.7.2 1 1.3.1 1.7-1.5.7-3.7.2-5.4-1.5-1.7-1.7-2.2-3.9-1.3-5.2Z"/>
-                </svg>
-              </span>
-              <span class="channels__text">
-                <span class="channels__label">WhatsApp</span>
-                <span class="channels__value">+55 (00) 00000-0000</span>
-              </span>
-              <svg class="channels__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M7 17 17 7M9 7h8v8"/>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://instagram.com/seu.usuario" target="_blank" rel="noopener noreferrer">
-              <span class="channels__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="5"/>
-                  <circle cx="12" cy="12" r="4"/>
-                  <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/>
-                </svg>
-              </span>
-              <span class="channels__text">
-                <span class="channels__label">Instagram</span>
-                <span class="channels__value">@seu.usuario</span>
-              </span>
-              <svg class="channels__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M7 17 17 7M9 7h8v8"/>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/isabelstrindade" target="_blank" rel="noopener noreferrer">
               <span class="channels__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/>
@@ -1853,12 +1804,27 @@ strong { font-weight: 600; }
               </span>
               <span class="channels__text">
                 <span class="channels__label">GitHub</span>
-                <span class="channels__value">github.com/seu-usuario</span>
+                <span class="channels__value">github.com/isabelstrindade</span>
               </span>
               <svg class="channels__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M7 17 17 7M9 7h8v8"/>
               </svg>
             </a>
+          </li>
+
+          <li>
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-elev);">
+              <span class="channels__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <span class="channels__text">
+                <span class="channels__label">Localização</span>
+                <span class="channels__value" style="color: var(--ink); font-weight: 500;">Mormaço — Rio Grande do Sul</span>
+              </span>
+            </div>
           </li>
         </ul>
       </div>
@@ -1869,17 +1835,17 @@ strong { font-weight: 600; }
 <footer class="site-footer">
   <div class="container footer__inner">
     <div class="footer__id">
-      <span class="monogram" aria-hidden="true">SN</span>
+      <span class="monogram" aria-hidden="true">IT</span>
       <p>
-        Seu Nome
-        <span>Administração · [Sua cidade — UF]</span>
+        Isabel Trindade
+        <span>Administração · Mormaço — Rio Grande do Sul</span>
       </p>
     </div>
 
     <p class="footer__note">
-      Feito à mão em HTML, CSS e JavaScript. Publicado no
-      <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
-      <span data-year>2026</span>.
+      Obrigada pela visita! Este portfólio apresenta um pouco de quem sou, do que valorizo e dos caminhos que desejo construir profissionalmente.
+      <br>
+      © <span data-year>2026</span> Isabel Trindade · Portfólio profissional.
     </p>
 
     <a class="footer__top" href="#topo">
@@ -1904,81 +1870,74 @@ strong { font-weight: 600; }
 <section class="cv" aria-label="Currículo para impressão">
   <header class="cv__head">
     <div>
-      <h2 class="cv__name">Seu Nome</h2>
-      <p class="cv__role">Estudante de Administração · Gestão, processos e empreendedorismo</p>
+      <h2 class="cv__name">Isabel Trindade</h2>
+      <p class="cv__role">Estudante de Administração · Atitus Educação (2º semestre)</p>
     </div>
     <ul class="cv__contact">
-      <li>seu.email@exemplo.com</li>
-      <li>+55 (00) 00000-0000</li>
-      <li>github.com/seu-usuario</li>
-      <li>[Sua cidade — UF]</li>
+      <li>isabel12trindade@gmail.com</li>
+      <li>Mormaço — Rio Grande do Sul</li>
+      <li>github.com/isabelstrindade</li>
     </ul>
   </header>
 
   <section class="cv__block">
     <h3>Objetivo</h3>
     <p>
-      Primeira oportunidade efetiva ou programa de trainee em gestão, operações ou projetos.
-      Disponibilidade para [cidade, híbrido ou remoto]. Interesse por processos, análise de
-      indicadores e empreendedorismo.
+      Aprender, evoluir e contribuir. Busco oportunidades que me permitam desenvolver minhas competências, adquirir novos conhecimentos e contribuir com dedicação, responsabilidade e vontade de aprender. Quero construir uma trajetória profissional baseada em crescimento, colaboração e resultados.
     </p>
   </section>
 
   <section class="cv__block">
-    <h3>Formação</h3>
+    <h3>Formação Acadêmica</h3>
     <p class="cv__item">
-      <strong>Graduação em Administração</strong> — [Nome da Universidade]
-      <span>2023 – 2027 (previsão de conclusão)</span>
+      <strong>Graduação em Administração</strong> — Atitus Educação
+      <span>2026 – 2029 (2º semestre em andamento)</span>
     </p>
     <p class="cv__small">
-      Ênfase em gestão de processos e empreendedorismo. Atividades: empresa júnior, projetos
-      de extensão e organização de eventos acadêmicos.
+      Interesses de estudo: gestão organizacional, administração financeira, marketing, empreendedorismo e comportamento organizacional.
     </p>
   </section>
 
   <div class="cv__block cv__cols">
     <section>
-      <h3>Competências</h3>
+      <h3>Competências e Diferenciais</h3>
       <ul class="cv__list">
-        <li>Mapeamento de processos (AS-IS / TO-BE) e BPMN básico</li>
-        <li>Planejamento e acompanhamento de indicadores (KPIs)</li>
-        <li>Excel avançado, Google Sheets e Power BI (básico)</li>
-        <li>Gestão de projetos, 5W2H e melhoria contínua</li>
-        <li>Relatórios, apresentações e facilitação de reuniões</li>
+        <li>Comunicação clara e diálogo respeitoso</li>
+        <li>Empatia e compreensão de diferentes perspectivas</li>
+        <li>Trabalho em equipe e construção colaborativa</li>
+        <li>Organização e atenção cuidadosa aos detalhes</li>
+        <li>Adaptabilidade para aprender e lidar com novas situações</li>
+        <li>Responsabilidade com prazos e combinados</li>
       </ul>
     </section>
     <section>
-      <h3>Cursos e idiomas</h3>
+      <h3>Interesses e Idiomas</h3>
       <ul class="cv__list">
-        <li>Excel avançado — 40h (2024)</li>
-        <li>Power BI introdutório — 20h (2025)</li>
-        <li>Gestão de projetos — 30h (2025)</li>
-        <li>Português nativo · Inglês intermediário</li>
+        <li>Empreendedorismo e oportunidades de negócios</li>
+        <li>Marketing, divulgação e relacionamento</li>
+        <li>Desenvolvimento contínuo e liderança</li>
+        <li>Inglês (1 ano de formação complementar)</li>
       </ul>
     </section>
   </div>
 
   <section class="cv__block">
-    <h3>Projetos selecionados</h3>
+    <h3>Experiências e Formação Complementar</h3>
     <ul class="cv__projects">
       <li>
-        <strong>Feira de Negócios: do plano ao caixa</strong> — plano de negócio, precificação
-        e fluxo de caixa de uma operação real de três dias. 2025.
+        <strong>Auxiliar administrativo — empresa familiar</strong>: atuação atual em atividades de apoio administrativo, contribuindo com a organização e o funcionamento das rotinas da empresa.
       </li>
       <li>
-        <strong>Mapeamento de processos de ONG parceira</strong> — fluxos AS-IS e TO-BE em BPMN
-        e plano de ação 5W2H com cinco melhorias. 2025.
+        <strong>Assistente administrativo — mercado</strong>: experiência em atividades administrativas no setor de mercado, desenvolvendo organização, responsabilidade e atenção às rotinas do negócio.
       </li>
       <li>
-        <strong>Painel de indicadores para centro acadêmico</strong> — controle de associados e
-        inadimplência com fechamento mensal em 20 minutos. 2025.
+        <strong>Jovem Aprendiz do Campo</strong>: participação em experiência de aprendizagem e desenvolvimento, ampliando conhecimentos e vivências profissionais.
       </li>
       <li>
-        <strong>Estudo de viabilidade de cafeteria no campus</strong> — pesquisa com 180
-        respostas, ponto de equilíbrio e payback estimado. 2024.
+        <strong>Programa Super Nova</strong>: participação no programa como parte da trajetória de capacitação e desenvolvimento contínuo.
       </li>
     </ul>
-    <p class="cv__small">Portfólio completo, com entregas de cada projeto: seu-usuario.github.io</p>
+    <p class="cv__small">Portfólio online: isabelstrindade.github.io/portfolio</p>
   </section>
 </section>
 

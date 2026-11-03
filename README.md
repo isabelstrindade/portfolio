@@ -1,123 +1,68 @@
-# 💼 Portfólio Pessoal & Currículo Web
+# 💼 Portfólio Profissional — Isabel Trindade
 
-> Portfólio responsivo, acessível e profissional voltado para estudantes e profissionais de **Administração, Gestão e Empreendedorismo**, com gerador de currículo em PDF (A4) integrado e tema claro/escuro.
-
----
-
-## 🚀 Demonstração & Recursos
-
-- **Zero dependências externas:** Construído em puro HTML5, CSS3 e Vanilla JavaScript (sem necessidade de Node.js, npm ou bundlers).
-- **🌓 Alternância de Tema Claro / Escuro:**
-  - Detecta automaticamente a preferência do sistema operacional (`prefers-color-scheme`).
-  - Salva a escolha do usuário no `localStorage` sem "flash" branco no carregamento.
-- **📄 Currículo Integrado para Impressão/PDF:**
-  - Layout dedicado para folha **A4** ativado via `@media print` ou pelo botão *"Currículo em PDF"*.
-  - Oculta menus e elementos visuais da web, formatando o conteúdo automaticamente em padrão executivo para envio em processos seletivos.
-- **🏷️ Filtro Dinâmico de Projetos:**
-  - Filtragem instantânea por categorias (*Empreendedorismo*, *Extensão*, *Acadêmico*, *Gestão* e *Todos*).
-  - Contador dinâmico e suporte a leitores de tela com `aria-live`.
-- **📱 100% Responsivo:**
-  - Menu expansível em dispositivos móveis.
-  - Acompanha arquivos de pré-visualização (`_desktop.html` e `_mobile.html`) para testes locais em diferentes resoluções.
-- **♿ Acessibilidade & SEO:**
-  - *Skip link* para navegação por teclado.
-  - Suporte a `prefers-reduced-motion` para usuários sensíveis a animações.
-  - Marcação de dados estruturados **Schema.org (`Person`)** e tags Open Graph para redes sociais.
+> Portfólio responsivo, acessível e profissional de **Isabel Trindade**, estudante de Administração na Atitus (2º semestre), com apresentação de trajetória, competências, experiências profissionais e gerador de currículo em PDF (A4) integrado.
 
 ---
 
-## 📁 Estrutura de Arquivos
+## 🌐 Link do Site no Ar (GitHub Pages)
+
+O site está publicado e acessível publicamente com HTTPS:
+
+👉 **[https://isabelstrindade.github.io/portfolio/](https://isabelstrindade.github.io/portfolio/)**
+
+---
+
+## 👤 Sobre Isabel Trindade
+
+- **Formação:** Graduação em Administração — Atitus Educação (2º semestre)
+- **Localização:** Mormaço — Rio Grande do Sul
+- **E-mail:** [isabel12trindade@gmail.com](mailto:isabel12trindade@gmail.com)
+- **GitHub:** [github.com/isabelstrindade](https://github.com/isabelstrindade)
+- **Áreas de interesse:** Gestão organizacional, organização de processos, gestão de pessoas, administração financeira, marketing e empreendedorismo.
+
+---
+
+## 🚀 Principais Recursos do Portfólio
+
+- **Foto Profissional Integrada:** Imagem otimizada no cabeçalho/cartão de perfil.
+- **Zero dependências externas:** Construído em puro HTML5 semântico, CSS3 moderno e Vanilla JavaScript (sem necessidade de bundlers ou frameworks pesados).
+- **🌓 Tema Claro / Escuro:** Alternância dinâmica que detecta a preferência do sistema operacional e salva no `localStorage`.
+- **📄 Currículo em PDF Integrado:** Layout dedicado para impressão em folha **A4** (via `@media print` ou botão no topo) para download rápido de currículo formal.
+- **🏷️ Filtro de Experiências:** Filtragem dinâmica entre *Experiências Profissionais* e *Formação Complementar*.
+- **📱 100% Responsivo:** Adaptado com perfeição para computadores, tablets e smartphones.
+- **♿ Acessibilidade e SEO:** Skip links, tags Open Graph, atributos ARIA e marcação Schema.org (`Person`).
+
+---
+
+## 📁 Estrutura do Repositório
 
 ```text
-├── index.html          # Código completo da página (HTML, CSS e JavaScript integrados)
-├── _desktop.html       # Visualizador de teste em resolução Desktop (1280x900)
-├── _mobile.html        # Visualizador de teste em resolução Mobile (390x844)
-├── midia/              # Pasta recomendada para fotos, anexos e mídias do projeto
-├── .gitignore          # Regras para ignorar atalhos (.lnk), arquivos temporários e do SO
-├── .gitattributes      # Padronização de quebras de linha (LF)
-├── LICENSE             # Licença de uso de código aberto (MIT)
-└── README.md           # Documentação completa do projeto
+├── index.html                  # Código principal do portfólio (HTML + CSS + JS)
+├── _desktop.html               # Pré-visualização de tela grande (Desktop 1280x900)
+├── _mobile.html                # Pré-visualização de smartphone (Mobile 390x844)
+├── assets/
+│   └── img/
+│       └── isabel-trindade.png # Foto de perfil profissional
+├── midia/                      # Arquivos locais organizados (ignorado no Git)
+├── .gitignore                  # Regras de exclusão do repositório
+├── .gitattributes              # Normalização de quebras de linha LF
+├── LICENSE                     # Licença MIT
+└── README.md                   # Documentação do projeto
 ```
-
----
-
-## 🌐 Link do Site Publicado
-
-O site já está configurado e publicado no **GitHub Pages**:
-
-🔗 **[https://isabelstrindade.github.io/portfolio/](https://isabelstrindade.github.io/portfolio/)**
-
----
-
-## ✏️ Guia de Personalização
-
-Antes de publicar o seu portfólio no GitHub, abra o arquivo `index.html` em qualquer editor de código (como VS Code, Notepad++ ou Bloco de Notas) e atualize os seguintes campos:
-
-| Campo original no código | O que você deve colocar |
-| :--- | :--- |
-| `"Seu Nome"` | Seu nome completo |
-| `"SN"` | Suas iniciais (usadas no monograma do logo e cartão) |
-| `seu.email@exemplo.com` | Seu e-mail de contato |
-| `+55 (00) 00000-0000` | Seu WhatsApp comercial/pessoal com DDD |
-| `https://wa.me/5500000000000` | Link direto do seu WhatsApp com DDI + DDD + número |
-| `@seu.usuario` | Seu perfil no Instagram ou LinkedIn |
-| `github.com/seu-usuario` | Seu usuário no GitHub |
-| `[Sua cidade — UF]` | Sua cidade e estado de residência |
-| `[Nome da Universidade]` | Nome da sua faculdade / universidade |
-| `Projetos 1 a 6` | Títulos, descrições e entregas reais dos seus projetos |
 
 ---
 
 ## 💻 Como Visualizar Localmente
 
-Não é necessário instalar nenhum servidor ou programa pesado:
-
-1. Dê um duplo clique diretamente no arquivo `index.html` para abrir no seu navegador padrão.
-2. Para testar a responsividade e como o site fica em diferentes telas, abra:
-   - `_desktop.html` (simula tela de computador)
-   - `_mobile.html` (simula tela de celular smartphone)
-3. Para gerar o currículo em PDF, clique no botão **"Currículo em PDF (via impressão)"** ou pressione `Ctrl + P` (Windows) / `Cmd + P` (Mac) e escolha a opção **"Salvar como PDF"**.
-
----
-
-## 🌐 Como Publicar Gratuitamente no GitHub Pages
-
-O GitHub oferece hospedagem gratuita com certificado de segurança HTTPS para este site:
-
-### Passo 1: Criar o Repositório no GitHub
-1. Acesse sua conta no [GitHub](https://github.com/) e clique em **New Repository** (Novo Repositório).
-2. Dê um nome ao repositório (exemplo: `portfolio` ou `seu-usuario.github.io`).
-3. Deixe o repositório marcado como **Public** (Público).
-4. Clique em **Create repository**.
-
-### Passo 2: Subir os Arquivos
-Você pode enviar os arquivos pelo terminal Git ou diretamente pelo navegador:
-
-#### Opção A: Pelo Terminal Git
-```bash
-git init
-git add .
-git commit -m "feat: versão inicial do portfólio e currículo"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-git push -u origin main
-```
-
-#### Opção B: Pelo Navegador (Sem linha de comando)
-1. Na página inicial do repositório recém-criado, clique em **uploading an existing file**.
-2. Arraste os arquivos (`index.html`, `_desktop.html`, `_mobile.html`, `README.md`, etc.) para a tela.
-3. Clique em **Commit changes**.
-
-### Passo 3: Ativar o GitHub Pages
-1. No seu repositório no GitHub, clique na aba **Settings** (Configurações) no topo.
-2. No menu lateral esquerdo, clique em **Pages**.
-3. Em **Build and deployment > Source**, selecione **Deploy from a branch**.
-4. Abaixo, em **Branch**, selecione `main` e a pasta `/(root)`.
-5. Clique em **Save**.
-6. Em cerca de 1 a 2 minutos, o GitHub exibirá o link público do seu site (ex: `https://seu-usuario.github.io/portfolio/`).
+1. Dê um duplo clique no arquivo `index.html` para abrir diretamente no seu navegador (Google Chrome, Edge, Safari, Firefox).
+2. Para testar em resoluções simuladas:
+   - Abra `_desktop.html` para testar tela de computador.
+   - Abra `_mobile.html` para testar tela de celular.
+3. Para gerar o currículo em PDF:
+   - Clique em **"Currículo em PDF (via impressão)"** ou pressione `Ctrl + P` / `Cmd + P` e escolha **"Salvar como PDF"**.
 
 ---
 
 ## 📄 Licença
 
-Este projeto é disponibilizado sob a licença [MIT](LICENSE). Sinta-se livre para usar, customizar e publicar o seu próprio portfólio.
+Este projeto é disponibilizado sob a licença [MIT](LICENSE).
